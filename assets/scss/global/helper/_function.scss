@@ -1,0 +1,7 @@
+@function getColumnWidth($n) {
+    @return ($WIDTH * ($n / $grid-COLUMNS)) - $MARGIN;
+}
+
+@function calculateColumnOffset($n) {
+    @return getColumnWidth($n) + $MARGIN;
+}

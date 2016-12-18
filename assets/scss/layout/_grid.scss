@@ -1,0 +1,27 @@
+@media screen and (min-width: $BREAKPOINT) {
+
+    .grid {
+        margin-left: -$MARGIN;
+        margin-right: -$MARGIN;
+    }
+
+    .grid-col {
+        margin-left: $MARGIN;
+        margin-right: $MARGIN;
+        float: left;
+    }
+
+    @for $i from 1 through $grid-COLUMNS {
+        .grid-col_#{$i} {
+            width: getColumnWidth($i);
+        }
+
+        .mix-grid-col_push#{$i} {
+            left: calculateColumnOffset($i);
+        }
+
+        .mix-grid-col_pull#{$i} {
+            left: -(calculateColumnOffset($i));
+        }
+    }
+}

@@ -1,0 +1,23 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #888 url(../media/images/background.png) repeat;
+    font-family: $FONT_FAMILY;
+    line-height: 1;
+    @include font-size();
+}
+
+a {
+    color: $COLOR_PRIMARY;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.clearfix {
+    @include clearfix();
+}

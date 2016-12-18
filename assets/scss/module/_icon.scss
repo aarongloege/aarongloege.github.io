@@ -1,0 +1,20 @@
+.icon {
+    width: $ICON;
+    height: $ICON;
+    display: inline-block;
+    overflow: hidden;
+
+    svg {
+        width: $ICON;
+        height: $ICON;
+    }
+
+    .target {
+        fill: #888888;
+        transition: fill 200ms;
+    }
+
+    &:hover .target {
+        fill: $COLOR_PRIMARY;
+    }
+}

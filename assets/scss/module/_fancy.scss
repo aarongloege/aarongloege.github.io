@@ -1,0 +1,31 @@
+.fancy {
+    text-align: center;
+    position: relative;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #bfbfbf;
+    top: 50%;
+    width: 200px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}

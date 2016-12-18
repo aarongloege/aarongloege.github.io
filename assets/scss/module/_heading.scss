@@ -1,0 +1,21 @@
+.heading {
+    font-weight: bold;
+    color: #141414;
+}
+
+.heading_1 {
+    @include font-size(4.4);
+}
+
+.heading_2 {
+    @include font-size(4);
+}
+
+.heading_3 {
+    @include font-size(2.2);
+}
+
+.heading_sub {
+    font-weight: normal;
+    @include font-size(2.6);
+}
