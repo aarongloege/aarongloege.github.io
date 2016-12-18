@@ -2,12 +2,11 @@
     position: relative;
     background: #ffffff url(../media/images/grid.png) repeat top center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
-    margin: 0 auto 20px;
+    margin: $AVATAR - $PADDING / 2 auto 20px;
     padding: $PADDING $PADDING/2 $PADDING/2;
 
     @media screen and (min-width: $BREAKPOINT) {
         background-position: top left;
-        margin-top: $AVATAR - $PADDING / 2;
         max-width: $WIDTH;
         border-left: 5px solid #000;
         padding: $PADDING;

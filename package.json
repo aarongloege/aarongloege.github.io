@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --output-style compressed ./assets/scss/screen.scss ./assets/styles/screen.css",
+    "build:dev": "node-sass -w ./assets/scss/screen.scss ./assets/styles/screen.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarongloege/website.git"
+  },
+  "author": "Aaron Gloege",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aarongloege/website/issues"
+  },
+  "homepage": "https://github.com/aarongloege/website#readme",
+  "dependencies": {
+    "node-sass": "^4.0.0"
+  }
+}
